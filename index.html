@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        h1{
+          color: lightgreen;
+        }
+        h2{
+            color: rgb(206, 128, 128);
+            color: black;
+            background-color: antiquewhite;
+        }
+       
+      
+    </style>
+</head>
+<body>
+    
+     <script>
+          document.write("<h1> <center>Operators </center></h1>")
+          document.write("<h2><center>Arithmatic Operator</center></h2>")
+          a=2
+          b=5
+          document.write("1.Addition:" + (a+b) + "<br>")
+          document.write("2.Subtraction:" + (a-b) + "<br>")
+          document.write("3.Multiplication:" + (a*b) + "<br>")
+          document.write("4.Division:" + (a/b) + "<br>")
+          document.write("5.Module:" + (a%b) + "<br>")
+
+         document.write("<h2><center>Relational Operators</center></h2>")
+         a=20
+         b=8
+         document.write("1:" + (a==b) + "<br>")
+         document.write("2:" + (a!=b)+ "<br>" )
+         document.write("3:" + (a<b) + "<br>")
+         document.write("4:" + (a>b) + "<br>")
+         document.write("5:" + (a<=b) + "<br>")
+         document.write("6:" + (a>=b) + "<br>")
+
+         document.write("<h2><center>Logical Operators</center></h2>")
+         a=5
+         b=4
+         c=2
+         d=6
+         document.write("1.Logical AND:" + (a&&b) + "<br>")
+         document.write("2.Logical OR:" + (a||b) + "<br>")
+         document.write("3.Logical NOT:" + (!((a>b)&&(b<d))) + "<br>")
+
+        
+         document.write("<h2><center>Decision Making</center></h2>")
+         document.write("1. IF case:")
+         a=25
+         b=30
+         if(a==b)
+         {
+            document.write("hiiiiiiiii!!!!")
+         }
+         else{
+            document.write("byyyyyyy!!!!!" + "<br>")
+         }
+         document.write("2. IF ELSE case:")
+         a=50
+         b=30
+         if(a!=b)
+         {
+            document.write("its trueee")
+         }
+         else if(a<b) 
+         {
+            document.write("f4")
+         }
+         else if(a>b)
+         {
+            document.write("f10000")
+         }
+         else{
+            document.write("its falseeeee" + "<br>")
+         }
+         document.write("<br>")
+        document.write("3. NESTED IF ELSE case:")
+        a=20
+        b=12
+        c=30
+        d=12
+        if(b==d)
+        {
+            if(a>b)
+            {
+            document.write("f210")
+            }
+            else{
+                document.write("not trueeee")
+            }
+        }
+        else{
+            document.write("hiiiiiiiiiiii" )
+        }
+        document.write("<br>")
+        document.write("4. SWITCH case:")
+        a='orange'
+        switch(a)
+        {
+            case 'apple':
+                {
+                    document.write("its false")
+                    break;
+                }
+                case 'orange':
+                {
+                    document.write("its true")
+                    break;
+                }
+                case 'banana':
+                {
+                    document.write("its false")
+                    break;
+                }
+                case 'mango':
+                  {
+                    document.write("its false")
+                    break
+                  } 
+                  default:{
+                    document.write("hello")
+                    break;
+                  } 
+        }
+         document.write("<br>")
+         document.write("<h2><center> Loop </center></h2>")
+
+
+         document.write("1.For Loop:" +"<br>")
+         for(var i=1; i<=10; i++)
+         {
+            document.write("Revati!!" + "<br>")
+         }
+         document.write("<br>")
+
+
+         document.write("2. While Loop:" +"<br>")
+         var i=0
+         while(i<=10)
+         {
+            document.write( "1." + "Hello World" +"<br>")
+            i++
+         }
+         document.write("<br>")
+
+
+         document.write("3.Do While Loop:" + "<br>")
+         var a=0
+        do{
+            document.write("javascript" + "<br>")
+            a++
+        }
+       while(a<=10)
+
+       document.write("<h2><center> Functions</center></h2>")
+       document.write(" 1.function with no argument and  no return"+ "<br>")
+       function substraction()
+       {
+        var a=5
+        var b=5
+
+        document.write("substraction="+(a-b)+"<br>")
+       }
+       substraction()
+       document.write("<br>")
+
+
+       document.write("2.Function with argument and with no return"+"<br>")
+       function Multiplication(a,b)
+       {
+        document.write("Multiplication="+(a*b)+"<br>")
+       }
+       Multiplication(2,20)
+       Multiplication(10,10)
+       document.write("<br>")
+
+       
+
+       document.write("3.Function with return and with no argument"+"<br>")
+       function add()
+       {
+       return 20+3
+       }
+       document.write("addition="+(add()) +"<br>")
+       document.write("<br>")
+       
+       document.write("4.Function with argument and with return"+"<br>")
+       function Division(a,b,c,d)
+       {
+        return a/b
+        return c/d
+       }
+       document.write("division="+(Division(5,5))+"<br>")
+       document.write("division="+(Division(15,5)) +"<br>")
+        
+               
+              
+        </script>
+        
+
+</body>
+</html>
