@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+ document.write("<h1> <b> INHERITENCE </b> </h1>")
+ document.write("<b>1. single inheritence:</b>")
+ class Animal
+ {
+    eat()
+    {
+        document.write("Dog is Eating" +"<br>")
+    }
+ }
+ class Dog extends Animal
+ {
+    bark()
+    {
+        document.write("Dog is Barking")
+    }
+ }
+const dog=new Dog()
+dog.eat()
+dog.bark()
+
+document.write("<br>")
+document.write("<b>2. Multiplt inheritence:</b>")
+class Device 
+{
+    poweron()
+    {
+        document.wrte("device is on")
+    }
+}
+const Camera
+{
+    takephoto()
+    {
+        document.write("taing photo from device")
+    }
+}
+const Music player
+{
+    playmusic()
+    {
+        document.write("audio is avilable")
+    }
+}
+class Smartphone extends Device
+{
+    call()
+    {
+        document.write("calling")
+    }
+}
+const phone=new Samartphone()
+phone.poweron()
+phone.takephoto()
+phone.playmusic()
+</script>
+</html>
